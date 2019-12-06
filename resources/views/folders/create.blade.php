@@ -20,7 +20,7 @@
             <nav class="panel panel-defalut">
               <div class="panel-heading">フォルダを追加する</div>
               <div class="panel-body">
-                <form action="{{ route('folders.create) }}" method="post">
+                <form action="{{ route('folders.create') }}" method="post">
                   @csrf
                   <div class="form-group">
                     <lable for="title">フォルダ名</lable>
