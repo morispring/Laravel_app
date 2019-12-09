@@ -26,7 +26,7 @@ class Task extends Model
         $status = $this->attributes['status'];
 
         // 定義されていなければ空文字を返す
-        if (!reset(self::STATUS[$status])) {
+        if (!isset(self::STATUS[$status])) {
             return '';
         }
 
