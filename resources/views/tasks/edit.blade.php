@@ -19,11 +19,11 @@
                 @endforeach
               </div>
             @endif
-            <form action="{{ route('tasks.edit', ['id' => $task->$folder_id, 'task_id' => $task->id]) }}" method="POST">
+            <form action="{{ route('tasks.edit', ['id' => $task->folder_id, 'task_id' => $task->id]) }}" method="POST">
               @csrf
               <div class="form-group">
                 <label for="title">タイトル</label>
-                <input type="text" class="form-control" name="title" id="title" value="{{ old('title') ?? task->title }}" />
+                <input type="text" class="form-control" name="title" id="title" value="{{ old('title') ?? $task->title }}" />
               </div>
               <div class="form-group">
                 <label for="status">状態</label>
@@ -32,6 +32,7 @@
                     <option value="{{ $key }}" {{ $key == old('status', $task->status) ?'selected' : '' }}>
                       {{ $val['label'] }}
                     </option>
+                  @endforeach
               </div>
               <div class="form-group">
                 <label for="due_date">期限</label>
