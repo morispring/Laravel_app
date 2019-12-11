@@ -29,8 +29,8 @@
               <input type="password" class="form-control" id="password" name="password">
             </div>
             <div class="form-group">
-              <label for="password">パスワード（確認）</label>
-              <input type="password" class="form-control" id="password-confirm" name="password_cofirmation">
+              <label for="password-confirm">パスワード（確認）</label>
+              <input type="password" class="form-control" id="password-confirm" name="password_confirmation">
             </div>
             <div class="text-right">
               <button type="submit" class="btn btn-primary">送信</button>

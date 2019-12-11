@@ -55,7 +55,7 @@ class RegisterController extends Controller
         ], [], [
             'name' => ' ユーザー名',
             'email' => ' メールアドレス',
-            'password' => ' メールアドレス',
+            'password' => ' パスワード',
         ]);
     }
 
